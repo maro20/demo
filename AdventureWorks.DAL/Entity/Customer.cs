@@ -27,7 +27,6 @@ namespace AdventureWorks.DAL.Entity
         public System.Guid rowguid { get; set; }
         public System.DateTime ModifiedDate { get; set; }
     
-        public virtual Person Person { get; set; }
         public virtual SalesTerritory SalesTerritory { get; set; }
         public virtual Store Store { get; set; }
         public virtual ICollection<SalesOrderHeader> SalesOrderHeaders { get; set; }

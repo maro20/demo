@@ -32,7 +32,6 @@ namespace AdventureWorks.DAL.Entity
         public System.Guid rowguid { get; set; }
         public System.DateTime ModifiedDate { get; set; }
     
-        public virtual Employee Employee { get; set; }
         public virtual ICollection<SalesOrderHeader> SalesOrderHeaders { get; set; }
         public virtual SalesTerritory SalesTerritory { get; set; }
         public virtual ICollection<SalesPersonQuotaHistory> SalesPersonQuotaHistories { get; set; }

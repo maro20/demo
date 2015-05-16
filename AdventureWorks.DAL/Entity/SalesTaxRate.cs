@@ -21,7 +21,5 @@ namespace AdventureWorks.DAL.Entity
         public string Name { get; set; }
         public System.Guid rowguid { get; set; }
         public System.DateTime ModifiedDate { get; set; }
-    
-        public virtual StateProvince StateProvince { get; set; }
     }
 }

@@ -85,6 +85,23 @@
       <DependentUpon>AdventureWorksContext.edmx</DependentUpon>
       <LastGenOutput>AdventureWorksContext.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Entity\SalesContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SalesContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Entity\SalesContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SalesContext.edmx</DependentUpon>
+      <LastGenOutput>SalesContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entity\SalesContext.edmx.diagram">
+      <DependentUpon>SalesContext.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entity\SalesContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SalesContext.edmx</DependentUpon>
+      <LastGenOutput>SalesContext.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -141,22 +158,22 @@
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\CountryRegionCurrency.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\CreditCard.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\Culture.cs">
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\Currency.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\CurrencyRate.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\Customer.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\DatabaseLog.cs">
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
@@ -195,7 +212,7 @@
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\PersonCreditCard.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\PersonPhone.cs">
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
@@ -254,32 +271,47 @@
     <Compile Include="Entity\PurchaseOrderHeader.cs">
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\SalesContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\SalesContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\SalesContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesContext.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Entity\SalesOrderDetail.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SalesOrderHeader.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SalesOrderHeaderSalesReason.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SalesPerson.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SalesPersonQuotaHistory.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SalesReason.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SalesTaxRate.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SalesTerritory.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SalesTerritoryHistory.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\ScrapReason.cs">
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
@@ -291,19 +323,19 @@
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\ShoppingCartItem.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SpecialOffer.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\SpecialOfferProduct.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\StateProvince.cs">
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\Store.cs">
-      <DependentUpon>AdventureWorksContext.tt</DependentUpon>
+      <DependentUpon>SalesContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TransactionHistory.cs">
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>

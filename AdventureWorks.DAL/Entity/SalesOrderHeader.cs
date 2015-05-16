@@ -47,9 +47,6 @@ namespace AdventureWorks.DAL.Entity
         public System.Guid rowguid { get; set; }
         public System.DateTime ModifiedDate { get; set; }
     
-        public virtual Address Address { get; set; }
-        public virtual Address Address1 { get; set; }
-        public virtual ShipMethod ShipMethod { get; set; }
         public virtual CreditCard CreditCard { get; set; }
         public virtual CurrencyRate CurrencyRate { get; set; }
         public virtual Customer Customer { get; set; }

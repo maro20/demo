@@ -24,7 +24,6 @@ namespace AdventureWorks.DAL.Entity
         public System.Guid rowguid { get; set; }
         public System.DateTime ModifiedDate { get; set; }
     
-        public virtual Product Product { get; set; }
         public virtual ICollection<SalesOrderDetail> SalesOrderDetails { get; set; }
         public virtual SpecialOffer SpecialOffer { get; set; }
     }

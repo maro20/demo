@@ -16,7 +16,6 @@ namespace AdventureWorks.DAL.Entity
     {
         public SalesTerritory()
         {
-            this.StateProvinces = new HashSet<StateProvince>();
             this.Customers = new HashSet<Customer>();
             this.SalesOrderHeaders = new HashSet<SalesOrderHeader>();
             this.SalesPersons = new HashSet<SalesPerson>();
@@ -34,8 +33,6 @@ namespace AdventureWorks.DAL.Entity
         public System.Guid rowguid { get; set; }
         public System.DateTime ModifiedDate { get; set; }
     
-        public virtual CountryRegion CountryRegion { get; set; }
-        public virtual ICollection<StateProvince> StateProvinces { get; set; }
         public virtual ICollection<Customer> Customers { get; set; }
         public virtual ICollection<SalesOrderHeader> SalesOrderHeaders { get; set; }
         public virtual ICollection<SalesPerson> SalesPersons { get; set; }
